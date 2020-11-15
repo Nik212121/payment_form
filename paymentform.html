@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>payment form</title>
+</head>
+<body>
+<form>
+<h1>Payment form</h1>
+<p>Required fields are followed by <abbr title="required">*</abbr>.</p>
+<section>
+    <h2>Contact information</h2>
+    <fieldset>
+      <legend>Title</legend>
+      
+            <label for="title1">
+              <input type="radio" id="title1" name="title"value="king" >
+              Ace
+            </label><br>
+          
+          
+            <label for="title2">
+              <input type="radio" id="title2" name="title"value="King">
+              King
+            </label><br>
+          
+          
+            <label for="title3"> 
+              <input type="radio" id="title3" name="title"value="queen" >
+              Queen
+            </label> <br>
+           
+    </fieldset>
+    <p>
+      <label for="name">
+        Name: 
+        <abbr title="required">*</abbr>
+      </label>
+      <input type="text" id="name" name="username">
+    </p>
+    <p>
+      <label for="mail">
+        E-mail: 
+        <abbr title="required">*</abbr>
+      </label>
+      <input type="email" id="mail" name="usermail">
+    </p>
+    <p>
+      <label for="password">
+        Password: 
+        <abbr title="required">*</abbr>
+      </label>
+      <input type="password" id="password" name="password">
+    </p>
+</section>
+<section>
+    <h2>Payment information</h2>
+    <p>
+      <label for="card">
+        Card type:
+      </label>
+      <select id="card" name="usercard">
+        <option value="visa">Visa</option>
+        <option value="mc">mastercard</option>
+        <option value="RP">Rupay</option>
+      </select>
+    </p>
+    <p>
+      <label for="number">
+        Card number:
+       <abbr title="required">*</abbr>
+      </label>
+      <input type="tel" id="number" name="cardnumber">
+    </p>
+    <p>
+      <label for="date">
+        Expiration date:
+        <abbr title="required">*</abbr><br>
+        <em>formatted as mm/dd/yyyy</em>
+      </label>
+      <input type="date" id="date" name="expiration">
+    </p>
+</section>
+     <p> <button type="submit">Validate the payment</button> </p>
+
+</form>
+</body>
+</html>
